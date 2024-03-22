@@ -1,0 +1,32 @@
+.parent {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  position: relative;
+  margin: 50px auto;
+  /* overflow: hidden; */
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveAround 15s infinite linear;
+  animation-delay: 2s;
+}
+
+@keyframes moveAround {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translate(150px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translate(150px)
+      rotate(-360deg);
+  }
+}

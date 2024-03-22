@@ -1,0 +1,10 @@
+.desktop-only-warning {
+  margin: var(--root-page-padding);
+  margin-bottom: 40px;
+}
+
+@media (width > 786px) {
+  .desktop-only-warning {
+    display: none;
+  }
+}

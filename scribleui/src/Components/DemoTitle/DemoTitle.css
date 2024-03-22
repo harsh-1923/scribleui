@@ -1,0 +1,38 @@
+.demo-title {
+  padding: var(--root-page-padding);
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.demo-title > p {
+  font-size: 18px;
+}
+
+.info-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.demo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.description {
+  opacity: 0.7;
+}
+
+@media (width < 500px) {
+  .demo-title {
+    margin-bottom: 40px;
+  }
+  .info-wrap {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+}

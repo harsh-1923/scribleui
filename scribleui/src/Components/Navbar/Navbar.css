@@ -1,0 +1,26 @@
+.navbar {
+  --navbar-height: 60px;
+  --navbar-color: transparent;
+
+  --navbar-logo-font-size: 22px;
+
+  height: var(--navbar-height);
+  width: 100dvw;
+  background-color: var(--navbar-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--root-page-padding);
+}
+
+.logo-text {
+  font-size: var(--navbar-logo-font-size);
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: -0.5px;
+  transition: all 100ms ease-in;
+}
+
+.logo-text:hover {
+  opacity: 0.8;
+}

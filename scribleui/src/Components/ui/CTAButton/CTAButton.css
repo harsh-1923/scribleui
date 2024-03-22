@@ -1,0 +1,14 @@
+.cta-button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: var(--container-outline);
+  transition: all 100ms ease-in-out;
+  background-color: var(--button-background);
+}
+
+.cta-button:hover {
+  outline: var(--container-outline-hover);
+}

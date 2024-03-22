@@ -1,0 +1,10 @@
+.component-library {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.component-item {
+  width: calc(33.33% - 20px); /* Adjust the width as needed */
+  margin: 10px;
+  /* Additional styling for each component item */
+}

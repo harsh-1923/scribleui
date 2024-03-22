@@ -1,0 +1,9 @@
+.text-container {
+  overflow: hidden;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,23 @@
+.comp-hero-wrap {
+  padding: var(--root-page-padding);
+  padding-top: 100px;
+  /* background: radial-gradient(
+    ellipse 100% 100% at 50% -10%,
+    #104627e6,
+    rgba(0, 0, 0, 0)
+  ); */
+  margin-top: -60px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: -0.09rem;
+  overflow: hidden;
+}

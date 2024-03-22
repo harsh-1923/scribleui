@@ -1,0 +1,49 @@
+.pixel-img-wrap {
+  --dim: 5px;
+
+  height: calc(24 * var(--dim));
+  width: calc(24 * var(--dim));
+
+  margin: 30px;
+}
+
+.row {
+  height: var(--dim);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.pixel {
+  width: calc(100% / 24);
+  height: 100%;
+  border-radius: 50%;
+}
+
+.pixel:where([data-state="show"]) {
+  background-color: rgb(255, 255, 255);
+}
+
+.pixel:where([data-state="hide"]) {
+  background-color: transparent;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgb(251, 251, 251);
+  }
+
+  50% {
+    background-color: rgba(255, 255, 255, 0.646);
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.849);
+  }
+}
+
+.pixel-img-wrap:hover {
+  .pixel:where([data-state="show"]) {
+    animation: pulse ease-in-out infinite;
+  }
+}

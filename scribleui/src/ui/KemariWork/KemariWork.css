@@ -1,0 +1,131 @@
+.kemari-work-wrap {
+  --root-padding: 40px clamp(16px, 5vw, 6vw);
+  width: 100%;
+  color: white;
+}
+
+.kemari-work-item {
+  width: 100%;
+  height: 40dvh;
+  padding: var(--root-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.527);
+  position: relative;
+  overflow: hidden;
+}
+
+.kemari-item-info {
+  display: flex;
+  gap: 1rem;
+  z-index: -10;
+}
+
+.kemari-item-info h2 {
+  font-weight: 300;
+  font-size: clamp(20px, 1.2vw, 26px);
+}
+
+.kwi-tag {
+  flex: 0 0 40%;
+}
+
+.kwi-description {
+  flex: 0 0 60%;
+}
+
+.kwi-title-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 10;
+}
+
+.kwi-title {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.kwi-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  height: 100%;
+  cursor: pointer;
+}
+
+.kwi-button > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  border-radius: 10px;
+}
+
+.kwi-button-left {
+  background-color: whitesmoke;
+  color: black;
+  height: 80px;
+}
+
+.kwi-button-right {
+  background-color: #ff0046;
+  height: 80px;
+  transition: all 0.2s ease-in-out;
+}
+
+.kwi-button:hover {
+  .kwi-button-right {
+    transform: translateX(20px);
+  }
+}
+
+.kwi-img {
+  width: 100%;
+  height: 70dvh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+
+  /* opacity: 1; */
+}
+
+@media (width < 768px) {
+  .kwi-img {
+    opacity: 1 !important;
+    position: relative;
+    height: auto !important;
+    margin-top: 40px;
+  }
+
+  .kemari-work-item {
+    height: auto !important;
+    padding: 20px 0px;
+    /* flex-direction: column-reverse; */
+  }
+
+  .kemari-item-info {
+    flex-direction: column;
+  }
+
+  .kwi-title-info {
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: start;
+  }
+
+  .kwi-button {
+    padding: 0;
+    margin-top: 10px;
+  }
+}

@@ -1,42 +1,57 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.main-header {
+  font-size: clamp(30px, 7vw, 80px);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -0.013em;
   text-align: center;
+  background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.431));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.input {
+  background-color: transparent;
+  outline: 1px solid rgba(128, 128, 128, 0.378);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.basic-text {
+  opacity: 0.8;
+}
+
+.header-main {
+  font-size: clamp(37px, 5vw, 6vw);
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  /* background-clip: text;
+  background-image: linear-gradient(
+    to bottom,
+    white,
+    rgba(255, 255, 255, 0.269)
+  );
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; */
+}
+
+@media (width < 786px) {
+  .desktop {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (width > 768px) {
+  .mobile-tablet {
+    display: none;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (width > 500px) {
+  .mobile {
+    display: none;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
